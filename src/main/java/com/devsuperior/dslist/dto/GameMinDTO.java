@@ -1,9 +1,8 @@
-package com.fagnerdias.dslist.dto;
+package com.devsuperior.dslist.dto;
 
-import com.fagnerdias.dslist.entities.Game;
+import com.devsuperior.dslist.entities.Game;
 
 public class GameMinDTO {
-
 
 	private Long id;
 	private String title;
@@ -11,10 +10,6 @@ public class GameMinDTO {
 	private String imgUrl;
 	private String shortDescription;
 	
-	
-	public GameMinDTO() {	
-	}
-
 	public GameMinDTO(Game entity) {
 		id = entity.getId();
 		title = entity.getTitle();
@@ -42,6 +37,4 @@ public class GameMinDTO {
 	public String getShortDescription() {
 		return shortDescription;
 	}
-	
-	
 }
